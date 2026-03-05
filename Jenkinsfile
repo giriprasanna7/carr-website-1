@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                 sudo cp -r carwebsite-main/carwebsite/* /var/www/html/
-                sudo systemctl restart httpd
+                sudo systemctl restart apache2
                 '''
             }
         }
